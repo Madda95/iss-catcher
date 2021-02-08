@@ -41,6 +41,7 @@ const setIssPassesForLocation = (coordinates) => (dispatch) => {
           } else {
             window.alert('Non sono previsti passaggi');
           }
+          dispatch(actions.setIsSearching());
         })
         .catch((e) => {
           console.log(e);
@@ -49,6 +50,7 @@ const setIssPassesForLocation = (coordinates) => (dispatch) => {
     })
     .catch((err) => {
       window.alert('Queste coordinate non sono disponibili');
+      dispatch(actions.setIsSearching());
     });
 };
 

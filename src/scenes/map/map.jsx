@@ -35,7 +35,7 @@ const Map = ({
   const GetPositionOnMap = (e) => {
     useMapEvents({
       click (e) {
-        if (isSelectedArea) {
+        if (isSelectedArea && !isSearching) {
           const position = e.latlng;
           let getCoordinates = {
             latitude: position.lat,
@@ -43,6 +43,7 @@ const Map = ({
           };
           setIssPassesForLocation(getCoordinates);
           setIsSelectedArea();
+          toggleIsSearching();
         }
       },
     });
