@@ -28,7 +28,7 @@ const getActualIssPosition = () => {
       new Promise((resolve) => {
         axios
           .get(
-            `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.latitude},${coordinates.longitude}&key=AIzaSyA9fK3E11pSXiANkYPQ7wza-7G-dKZSQJw`
+            `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coordinates.latitude},${coordinates.longitude}&key=${process.env.REACT_APP_SECRET_NAME}`
           )
           .then((res) => {
             resolve([
