@@ -1,0 +1,150 @@
+@import '../../assets/style/core.scss';
+
+.box {
+  position: fixed;
+  width: 45vw;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  right: 30px;
+  bottom: 30px;
+  background: rgba($primary, 0.95);
+  z-index: 400;
+  border-radius: 15px;
+
+  .handleSelectionArea {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: $primary;
+    position: absolute;
+    background-image: url(../../assets/images/lens.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -60px;
+    right: 0;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .loader {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  .loader:after {
+    content: " ";
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: $accent transparent $accent transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .welcome {
+    color: $secondary;
+    font-size: 26px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 46px;
+  }
+
+  .onSearch {
+    background-image: url(../../assets/images/close.png);
+    background-size: 50%;
+    box-shadow: 0px 0px 5px red;
+    border: 1px solid red;
+  }
+
+  .divider {
+    height: 85%;
+    width: 0;
+    border: 1px dashed $accent;
+    margin: 0 20px;
+  }
+
+  .infoHeader {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+
+    .title {
+      color: $secondary;
+      font-size: 26px;
+      padding: 10px 0;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .coordinates {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  }
+
+  .selectedCity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .pin {
+      width: 24px;
+      height: 24px;
+      background-image: url(../../assets//images/pin.png);
+      background-size: contain;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 12px;
+      width: 100%;
+      text-align: center;
+      color: $accent;
+    }
+  }
+
+  .infoPasses {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    overflow: auto;
+    overflow: auto;
+    max-width: 50%;
+    max-height: 100%;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $primary;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border: 3px solid $primary;
+      background: $accent;
+      border-radius: 10px;
+    }
+  }
+}

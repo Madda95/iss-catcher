@@ -1,0 +1,30 @@
+@import '../../../../assets/style/core.scss';
+
+.box {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 0;
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .label {
+    color: $secondary;
+    font-size: 14px;
+  }
+
+  .value {
+    color: $accent;
+    font-size: 12px;
+  }
+}

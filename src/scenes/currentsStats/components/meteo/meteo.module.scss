@@ -1,0 +1,39 @@
+@import '../../../../assets/style/core.scss';
+
+.box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  align-items: center;
+
+  .temperature {
+    color: $secondary;
+    font-size: 36px;
+    width: 33%;
+    text-align: center;
+  }
+
+  .humidity {
+    color: $secondary;
+    font-size: 36px;
+    width: 33%;
+    text-align: center;
+  }
+
+  .icon {
+    width: 90px;
+    height: 90px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url();
+  }
+}
+
+.location {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  color: $accent;
+}
