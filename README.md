@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+Iss-catcher e' un applicazione che tiene traccia costante della posizione
+dell'astronave iss, inoltre e' possibile cercare quando l'atronave passera' sopra
+una determinata area e sapere le condizioni previste meteo al passaggio.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Guida all'installazione di Iss-catcher:
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ - installare git se non installato
+ - installare node se non installato
+ - se installati riavviare il computer
+ - scaricare il repository con il comando da console =>  git clone https://github.com/Madda95/iss-catcher.git
+ - in quanto l'applicazione e' eseguita in locale per impedire blocchi da parte del CORS installare l'estensione di chrome
+   che trovate a questo link https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
+ - una volta scaricata l'estensione cliccare sull'estensione nella barra delle estensioni di Google chrome e premere il pulsante ON
+ - a questo punto aprire la cartella di progetto con visual studio code e aggiungere un file nella root di progetto con estenzione .env
+ - all'interno del file .env incollare => REACT_APP_GOOGLE_API_KEY=(chiedere via mail)
+ - a questo punto andare su "Terminale / Terminal" e cliccare su "Nuovo terminale / New terminal".
+ - digitare => npm i
+ - attendere la fine dell'installazione dei moduli.
+ - digitare => npm start
+ - godersi iss-catcher

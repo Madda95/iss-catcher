@@ -43,7 +43,7 @@ const SelectedAreaInfo = ({isSelectedArea, setIsSelectedArea, coordinates, passe
         </div>
           </>}
         </>
-        ) : (<><div className={styles.welcome}>Benvenuto, segui gli austronati dell' ISS nel loro viaggio e usa il pin per sapere quando l'astronave passera sopra di te 🤯</div></>)}
+        ) : (<><div className={styles.welcome}>Benvenuto, segui gli austronati dell' ISS nel loro viaggio, usa il pin per selezionare una posizione e conoscere date e condizioni meteo del passaggio dell'astronave 🤯</div></>)}
         <div
           className={`${styles.handleSelectionArea} ${isSelectedArea ? styles.onSearch : ''}`}
           onClick={() => {
