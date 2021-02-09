@@ -12,7 +12,7 @@ Guida all'installazione di Iss-catcher:
    che trovate a questo link https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
  - una volta scaricata l'estensione cliccare sull'estensione nella barra delle estensioni di Google chrome e premere il pulsante ON
  - a questo punto aprire la cartella di progetto con visual studio code e aggiungere un file nella root di progetto con estenzione .env
- - all'interno del file .env incollare => REACT_APP_GOOGLE_API_KEY=(chiedere via mail)
+ - all'interno del file .env incollare => REACT_APP_GOOGLE_API_KEY=(chiedere via mail => maddox.devs@gmail.com)s
  - a questo punto andare su "Terminale / Terminal" e cliccare su "Nuovo terminale / New terminal".
  - digitare => npm i
  - attendere la fine dell'installazione dei moduli.
